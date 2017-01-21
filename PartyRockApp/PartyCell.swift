@@ -22,5 +22,10 @@ class PartyCell: UITableViewCell {
         super.setSelected(selected, animated: animated)
 
     }
+    
+    func updateUI(partyRocks: PartyRock){
+        videoTitle.text = partyRocks.videoTitle
+        //TODO: Set image from URL
+    }
 
 }
