@@ -85,10 +85,10 @@
                                 <rect key="frame" x="0.0" y="233" width="375" height="434"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="101" id="eOW-ce-bUO">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="101" id="eOW-ce-bUO" customClass="PartyCell" customModule="PartyRockApp" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="375" height="101"/>
                                         <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="eOW-ce-bUO" id="UX4-wH-1AL">
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="eOW-ce-bUO" id="UX4-wH-1AL" userLabel="partybanner">
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="100"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
@@ -108,6 +108,10 @@
                                                 <constraint firstItem="bNi-Oc-IOM" firstAttribute="centerY" secondItem="UX4-wH-1AL" secondAttribute="centerY" id="sco-bG-t6K"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="videoPreviewImage" destination="UX4-wH-1AL" id="2TK-Xl-S4S"/>
+                                            <outlet property="videoTitle" destination="bNi-Oc-IOM" id="uTh-Q6-b2n"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
